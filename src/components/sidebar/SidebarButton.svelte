@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { Button, type ButtonProps } from "$lib/components/ui/button";
-  import { Bug } from "lucide-svelte";
+  import { Button } from "$lib/components/ui/button";
   import type { Component, Snippet } from "svelte";
   import * as Tooltip from "$lib/components/ui/tooltip";
   import { nodes } from "$/state/nodes.state";
@@ -16,8 +15,8 @@
     nodes.update(nodes => {
       nodes.push({
         id: Math.random().toString(36).substr(2, 9),
-        type: "input",
-        data: { label: "Input Node" },
+        type: "issue",
+        data: { },
         position: { x: 0, y: 0 }
         }
       )

@@ -7,6 +7,6 @@
   const {children, ...rest}: SvelteFlowProps = $props()
 </script>
 
-<SvelteFlow colorMode={colorMode} {...rest}  >
+<SvelteFlow colorMode={colorMode} {...rest} >
   {@render children?.()}
 </SvelteFlow>
